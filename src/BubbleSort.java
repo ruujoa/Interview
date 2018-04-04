@@ -2,8 +2,9 @@
 public class BubbleSort {
 	private static int[] sort(int[] arr) {
 		int temp = 0;
-		for (int i = arr.length - 1; i > 0; i--) {
-			for (int j = 0; j < i; j++) {
+		int n = arr.length;
+		for (int i = 0; i < n - 2; i++) {
+			for (int j = 0; j < n - i - 1; j++) {
 				if (arr[j+1] < arr[j]) {
 					temp = arr[j];
 					arr[j] = arr[j+1];
